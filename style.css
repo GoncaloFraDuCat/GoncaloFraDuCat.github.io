@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ffe7e5;
+  --background-color: rgb(255, 249, 249);
+  --text-color: #343a40;
+}
+
+body {
+  margin: 0;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--background-color);
+  color: black;
+}
+
+nav {
+  height: 61.5px;
+}
+
+section {
+  min-height: calc(100vh - 61.5px);
+}
+
+div {
+  min-height: fit-content !important;
+}
+
+img {
+  max-height: 100%;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom-style: groove;
+  border-color: darkslategrey;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar li {
+  float: left;
+  margin-right: 10px;
+}
+
+.navbar li a {
+  display: block;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.navbar-logo {
+  width: 50px;
+  padding-top: 5px;
+  padding-left: 30px;
+  position: fixed;
+  left: 20px;
+  z-index: 1000;
+}
+
+.banner-wrapper {
+  margin-top: 1px;
+}
+
+.banner {
+  background-image: url('student-mental_63942274.png');
+  background-size: cover;
+  text-align: center;
+  color: white;
+  z-index: 999;
+}
+
+.banner img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: calc(100vh - 61.5px);
+}
+
+.banner-text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+}
