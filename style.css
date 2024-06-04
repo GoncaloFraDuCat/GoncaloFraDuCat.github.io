@@ -69,35 +69,89 @@ img {
 .navbar-logo {
   width: 50px;
   padding-top: 5px;
-  padding-left: 30px;
   position: fixed;
-  left: 20px;
+  left: 40px;
   z-index: 1000;
+  border-radius: 50%;
 }
 
 .banner-wrapper {
   margin-top: 1px;
 }
 
-.banner {
-  background-image: url('student-mental_63942274.png');
+.banner-image {
+  background-image: url(images/dark-background.jpg);
   background-size: cover;
+  background-position: bottom;
   text-align: center;
   color: white;
   z-index: 999;
-}
-
-.banner img {
-  object-fit: cover;
-  object-position: bottom;
-  width: 100%;
   height: calc(100vh - 61.5px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.banner-text-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: yellow;
+.banner-text {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15vh
+}
+
+.banner-title {
+  font-size: 4.5em;
+  width: 50%;
+  margin-top: 10%;
+  padding-left: 8%;
+  text-align: left;
+}
+
+.banner-sub {
+  font-size: 1.5em;
+  width: 75%;
+}
+
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 61.5px);
+  background-color: black;
+}
+
+.skills-title {
+  color: white;
+  font-size: 3em;
+}
+
+.skills-container {
+  max-width: 1536px;
+  grid-row-gap: 3.26em;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.skills-box {
+  height: 69%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  background-color: grey;
+  border-color: grey;
+  justify-content: space-between;
+}
+
+.skills-box-image-1 {
+  background-image: url(images/bandup1.png);
+  width: 50vh;
+  height: 30vh;
 }
