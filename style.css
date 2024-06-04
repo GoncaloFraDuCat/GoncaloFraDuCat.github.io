@@ -12,7 +12,8 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: var(--background-color);
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 nav {
@@ -99,12 +100,11 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15vh
 }
 
 .banner-title {
   font-size: 4.5em;
-  width: 50%;
+  width: 56%;
   margin-top: 10%;
   padding-left: 8%;
   text-align: left;
@@ -119,13 +119,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 61.5px);
   background-color: black;
 }
 
 .skills-title {
   color: white;
   font-size: 3em;
+  padding: 25vh 0px 25vh 0px;
 }
 
 .skills-container {
@@ -140,18 +140,71 @@ img {
 }
 
 .skills-box {
-  height: 69%;
+  height: 70vh;
+  width: 170vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
-  background-color: grey;
-  border-color: grey;
   justify-content: space-between;
+  background-image: url(images/dark-background.jpg);
 }
 
 .skills-box-image-1 {
   background-image: url(images/bandup1.png);
-  width: 50vh;
-  height: 30vh;
+  width: 50%;
+  height: 100%;
+}
+
+.bandup-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.skills-box-image-2 {
+  background-image: url(images/iba1.png);
+  width: 50%;
+  height: 100%;
+}
+
+.skills-box-image-3 {
+  background-image: url(images/bandup1.png);
+  width: 50%;
+  height: 100%;
+}
+
+.skills-box-title {
+  font-size: 2em;
+  color: white;
+  width: 50%;
+  margin: 0;
+
+}
+
+.project-logo-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-logo-title h2 {
+  color: white;
+  font-size: 1em;
+  width: 35%;
+}
+
+
+.project-description {
+  font-size: 0.5em;
+  color: white;
+  width: 80%;
+  margin: 0;
+  margin-top: 15%;
+  align-content: initial;
+  text-align: left;
+  line-height: 26px;
+  padding-left: 17%;
 }
