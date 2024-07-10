@@ -26,10 +26,10 @@
     </a>
     <ul class="navbar">
       <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#atividades">Atividades</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#my-projects">Projects</a></li>
+      <li><a href="#my-skills">Skills</a></li>
+      <li><a href="#my-hobbies">Hobbies</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
     </ul>
   </nav>
 
@@ -94,7 +94,8 @@
 
           <div class="project-logo-title">
             <img src="images/h-logo.jpg" alt="Band-UP" class="bandup-logo">
-            <h2 class>Band-UP</h2>
+            <h2 class>ISEC Happy Campus
+            </h2>
           </div>
           <div class="project-description">
             <p>Designed a comprehensive website for Isec Lisboa's student mental
@@ -170,5 +171,77 @@
 
   </section>
 
+  <section class="my-hobbies">
+    <div class="hobbies-container">
+      <div class="hobbies-left">
+        <h1 class="hobbies-title-h1">Hobbies</h1>
+        <p>When I'm not coding, I'm usually out and about, exploring the world and capturing moments through my camera.
+          I'm also a huge fan of music, and I love playing the guitar in my free time. Here are some of my hobbies:</p>
+        <h2 class="music-title">Listen to "<i>7 Years</i>"</h2>
+        <audio controls>
+          <source src="audio/gcgc.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <h2 class="music-title">Listen to "<i>Freebird</i>"</h2>
+        <audio controls>
+          <source src="audio/free.wav" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="hobbies-right">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-me">
+    <div class="contact-me-container">
+      <div class="contact-me-left">
+        <h1 class="contact-title">Contact Me</h1>
+        <p class="contact-p">Feel free to reach out with any inquiries.</p>
+
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/gon%C3%A7alo-catarro-1b3332174/" target="_blank"
+          class="linkedin-link">Connect on
+          LinkedIn</a><br>
+
+        <!-- CV PDF Link -->
+        <a href="pdfs/cv-jun.pdf" download class="cv-download">Download My CV</a><br>
+      </div>
+      <div class="contact-me-right">
+        <!-- Contact Form -->
+        <form id="contact-form" method="POST" action="sendmail.php">
+          <div class="form-row">
+            <label for="contact-form-name">Name:</label>
+            <input id="contact-form-name" class="form-input" type="text" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-form-email">Email:</label>
+            <input id="contact-form-email" class="form-input" type="email" name="email" required>
+          </div>
+          <div class="form-row-m">
+            <label for="contact-form-message">Message:</label>
+            <textarea id="contact-form-message" class="form-input-msg" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+      </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2024 Your Name. All rights reserved.</span>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/yourlinkedinprofile/">LinkedIn</a></li>
+      </ul>
+      <ul class="download-cv">
+        <li><a href="pdfs/cv-jun.pdf" download>Download CV</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>

@@ -128,7 +128,7 @@ img {
 .projects-title {
   color: white;
   font-size: 3em;
-  padding: 25vh 0px 25vh 0px;
+  padding: 25vh 0px 5vh 0px;
   font-weight: 200;
 }
 
@@ -230,8 +230,9 @@ img {
 
 .project-logo-title h2 {
   color: white;
-  font-size: 1em;
-  width: 35%;
+  font-size: 1.5em;
+  width: 50%;
+  margin: 0;
 }
 
 
@@ -314,4 +315,181 @@ img {
 
 .skills-title-h1 {
   font-size: xxx-large;
+}
+
+
+.hobbies-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3%;
+  padding: 0% 5% 0% 5%;
+  width: 30%;
+  line-height: 1.5;
+  height: 100%;
+  background-color: #272727;
+
+}
+
+.music-title {
+  font-size: 1.5em;
+  color: white;
+  margin: 1;
+  font-weight: 400;
+}
+
+.hobbies-title-h1 {
+  font-size: xxx-large;
+  padding-top: 10%;
+}
+
+.hobbies-right {
+  background-image: url(images/music-img.jpg);
+  width: 70%;
+  height: 100vh;
+  background-position: bottom;
+}
+
+.hobbies-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-top: 5%;
+  height: 100vh;
+}
+
+.contact-me {
+  min-height: calc(100vh - 157.5px);
+  padding-top: 9%;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.contact-title {
+  font-size: 4em;
+  color: white;
+  font-weight: 200;
+}
+
+.contact-me-left {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-p {
+  font-size: larger;
+}
+
+
+.contact-me-right .form-input {
+  font-size: 16px;
+  width: 50vh;
+  height: 3vh;
+}
+
+.form-row {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row-m {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6%;
+}
+
+.form-input-msg {
+  height: 14vh;
+}
+
+.submit-button {
+  font-style: normal;
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 51vh;
+}
+
+.linkedin-link {
+
+  display: inline-block;
+  background-image: url(images/linkedin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 47px;
+  border-radius: 5px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-top: 9vh;
+}
+
+
+.cv-download {
+  font-style: normal;
+  color: white;
+  padding: 2%;
+  background-color: blue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 16px;
+  height: 3vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content span {
+  font-size: 14px;
+}
+
+.socials li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.download-cv li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.socials a,
+.download-cv a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.socials a:hover,
+.download-cv a:hover {
+  color: #ddd;
 }
