@@ -434,14 +434,25 @@ img {
   background-image: url(images/linkedin.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 40%;
-  height: 47px;
+  width: 28%;
+  height: 40px;
   border-radius: 5px;
   text-indent: -9999px;
   overflow: hidden;
-  margin-top: 9vh;
+  margin-top: 2vh;
 }
 
+.github-link {
+  display: inline-block;
+  background-image: url(images/github.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 37%;
+  height: 40px;
+  border-radius: 5px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
 
 .cv-download {
   font-style: normal;
