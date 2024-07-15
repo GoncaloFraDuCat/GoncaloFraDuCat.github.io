@@ -33,7 +33,7 @@
     </ul>
   </nav>
 
-  <section class="banner">
+  <section id="banner">
     <div class="banner-image">
       <div class="banner-text">
 
@@ -45,7 +45,7 @@
 
   </section>
 
-  <section class="my-projects">
+  <section id="my-projects">
     <h1 class="projects-title">My Past Projects</h1>
     <div class="projects-container">
 
@@ -112,17 +112,17 @@
             <p></p>
           </div>
         </div>
-
-
-
-
-
-
-
       </div>
+
+
+
+
+
+
+    </div>
   </section>
 
-  <section class="my-skills">
+  <section id="my-skills">
     <div class="skills-container">
       <div class="skills-intro">
         <h1 class="skills-title-h1">Skillset</h1>
@@ -171,7 +171,7 @@
 
   </section>
 
-  <section class="my-hobbies">
+  <section id="my-hobbies">
     <div class="hobbies-container">
       <div class="hobbies-left">
         <h1 class="hobbies-title-h1">Hobbies</h1>
@@ -196,7 +196,7 @@
   </section>
 
 
-  <section class="contact-me">
+  <section id="contact-me">
     <div class="contact-me-container">
       <div class="contact-me-left">
         <h1 class="contact-title">Contact Me</h1>
@@ -216,15 +216,18 @@
         <form id="contact-form" method="POST" action="sendmail.php">
           <div class="form-row">
             <label for="contact-form-name">Name:</label>
-            <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            <input id="contact-form-name" class="form-input" placeholder="Type your name here" type="text" name="name"
+              required>
           </div>
           <div class="form-row">
             <label for="contact-form-email">Email:</label>
-            <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            <input id="contact-form-email" class="form-input" placeholder="Type your email here" type="email"
+              name="email" required>
           </div>
           <div class="form-row-m">
             <label for="contact-form-message">Message:</label>
-            <textarea id="contact-form-message" class="form-input-msg" name="message" required></textarea>
+            <textarea id="contact-form-message" class="form-input-msg" placeholder="Type your message here"
+              name="message" required></textarea>
           </div>
           <button type="submit" class="submit-button">Submit</button>
         </form>
@@ -244,5 +247,27 @@
       </ul>
     </div>
   </footer>
+
+  <script src="javascript.js"></script>
+
+  <!-- Inline JavaScript for immediate execution -->
+  <script>
+    // Your inline JavaScript code here
+    // For example, smooth scrolling functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        const href = this.getAttribute('href');
+        const offsetTop = document.querySelector(href).offsetTop;
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        window.scroll({
+          top: offsetTop - navbarHeight,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+  </script>
 
 </body>
