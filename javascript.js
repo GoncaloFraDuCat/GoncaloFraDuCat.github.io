@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateCarousel() {
     carouselItems.forEach((item, index) => {
-      item.style.display = index === currentIndex ? 'flex' : 'none';
+      item.style.display = index === currentIndex ? 'block' : 'none';
     });
   }
 

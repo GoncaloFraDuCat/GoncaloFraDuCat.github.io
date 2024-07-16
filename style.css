@@ -146,12 +146,14 @@ img {
 
 .projects-carousel {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+  /* Changed to scroll for better control */
   white-space: nowrap;
   scrollbar-width: thin;
   /* For Firefox */
   scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
-
+  width: 100%;
+  /* Ensure it takes full width */
 }
 
 .projects-carousel-buttons {
@@ -163,9 +165,9 @@ img {
 
 .projects-box {
   flex: 0 0 auto;
+  width: 100%;
+  /* Each box takes full width of the carousel */
   margin-right: 20px;
-  width: calc(33.333% - 40px);
-  /* Adjusted for three equal columns minus the right margin */
 }
 
 .projects-carousel .projects-box:first-child,
