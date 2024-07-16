@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>My Website</title>
   <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -48,78 +49,84 @@
   <section id="my-projects">
     <h1 class="projects-title">My Past Projects</h1>
     <div class="projects-container">
+      <div class="projects-carousel">
+        <div class="projects-box-1">
+          <div class="projects-box-title">
 
-      <div class="projects-box-1">
-        <div class="projects-box-title">
+            <div class="project-logo-title">
+              <img src="images/bandup-logo.png" alt="Band-UP" class="bandup-logo">
+              <h2 class>Band-UP</h2>
+            </div>
+            <div class="project-description">
+              <p>Band-UP is a platform that connects musicians with bands and bands with musicians. It allows users to
+                create a profile, search for musicians or bands, and create or join bands. The platform also allows
+                users
+                to create events and invite other users to join them.</p>
 
-          <div class="project-logo-title">
-            <img src="images/bandup-logo.png" alt="Band-UP" class="bandup-logo">
-            <h2 class>Band-UP</h2>
+            </div>
           </div>
-          <div class="project-description">
-            <p>Band-UP is a platform that connects musicians with bands and bands with musicians. It allows users to
-              create a profile, search for musicians or bands, and create or join bands. The platform also allows users
-              to create events and invite other users to join them.</p>
-
-          </div>
-        </div>
-        <div class=" projects-box-image-1">
-          <p></p>
-        </div>
-      </div>
-
-
-      <div class="projects-box-2">
-        <div class="projects-box-title">
-
-          <div class="project-logo-title">
-            <img src="images/ibalogo.png" alt="Band-UP" class="bandup-logo">
-            <h2 class>ISEC 'Buddy' App</h2>
-          </div>
-          <div class="project-description">
-            <p>Band-UP is a platform that connects musicians with bands and bands with musicians. It allows users to
-              create a profile, search for musicians or bands, and create or join bands. The platform also allows users
-              to create events and invite other users to join them.</p>
-
-          </div>
-        </div>
-        <div class="projects-box-image-2">
-          <p></p>
-        </div>
-      </div>
-
-
-      <div class="projects-box-1">
-        <div class="projects-box-title">
-
-          <div class="project-logo-title">
-            <img src="images/h-logo.jpg" alt="Band-UP" class="bandup-logo">
-            <h2 class>ISEC Happy Campus
-            </h2>
-          </div>
-          <div class="project-description">
-            <p>Designed a comprehensive website for Isec Lisboa's student mental
-              health initiative, leveraging HTML, JavaScript, and
-              CSS to create an accessible and engaging platform.</p>
-
-          </div>
-        </div>
-        <div class=" projects-box-image-3">
-          <div class="projects-box-image-3-1">
-            <p></p>
-          </div>
-          <div class="projects-box-image-3-2">
+          <div class=" projects-box-image-1">
             <p></p>
           </div>
         </div>
+
+
+        <div class="projects-box-2">
+          <div class="projects-box-title">
+
+            <div class="project-logo-title">
+              <img src="images/ibalogo.png" alt="Band-UP" class="bandup-logo">
+              <h2 class>ISEC 'Buddy' App</h2>
+            </div>
+            <div class="project-description">
+              <p>Band-UP is a platform that connects musicians with bands and bands with musicians. It allows users to
+                create a profile, search for musicians or bands, and create or join bands. The platform also allows
+                users
+                to create events and invite other users to join them.</p>
+
+            </div>
+          </div>
+          <div class="projects-box-image-2">
+            <p></p>
+          </div>
+        </div>
+
+
+        <div class="projects-box-1">
+          <div class="projects-box-title">
+
+            <div class="project-logo-title">
+              <img src="images/h-logo.jpg" alt="Band-UP" class="bandup-logo">
+              <h2 class>ISEC Happy Campus
+              </h2>
+            </div>
+            <div class="project-description">
+              <p>Designed a comprehensive website for Isec Lisboa's student mental
+                health initiative, leveraging HTML, JavaScript, and
+                CSS to create an accessible and engaging platform.</p>
+
+            </div>
+          </div>
+          <div class=" projects-box-image-3">
+            <div class="projects-box-image-3-1">
+              <p></p>
+            </div>
+            <div class="projects-box-image-3-2">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-
-
+      <div class="projects-carousel-buttons">
+        <button id="prev-button">&lt;</button>
+        <button id="next-button">&gt;</button>
+      </div>
 
 
 
     </div>
+
   </section>
 
   <section id="my-skills">
@@ -130,6 +137,7 @@
           fledged
           project. Whatever your needs are, I can pretty much take on any challenge.</p>
       </div>
+
       <div class="skills-box">
         <div class="skills-box-1">
           <img src="images/cloud-coding.png" alt="HTML5" class="skill-1-logo">
@@ -141,16 +149,19 @@
         <div class="skills-box-1">
           <img src=" images/database-icon.png" alt="HTML5" class="skill-1-logo">
           <h2>Database Creation & Curation</h2>
-          <p>I specialize in creating and curating databases, ensuring they are organized, accessible, and optimized for
+          <p>I specialize in creating and curating databases, ensuring they are organized, accessible, and optimized
+            for
             performance.
-            My expertise lies in managing data from inception, through cleaning and transformation, to final deployment.
+            My expertise lies in managing data from inception, through cleaning and transformation, to final
+            deployment.
           </p>
         </div>
         <div class="skills-box-1">
           <img src=" images/video-edit.png" alt="HTML5" class="skill-1-logo">
           <h2>Video & Audio Editing</h2>
 
-          <p>With a strong foundation in Adobe's suite, including Premiere Pro for video editing and Audition for audio
+          <p>With a strong foundation in Adobe's suite, including Premiere Pro for video editing and Audition for
+            audio
             editing, I am
             adept at producing high-quality video and audio content, ensuring a
             polished and engaging final product.</p>
@@ -161,10 +172,12 @@
 
           <p>My passion for photography was ignited during my travels, capturing the essence of unfamiliar landscapes
             and cultures
-            through my lens. This skill has become a valuable asset in enhancing my products, allowing me to infuse them
+            through my lens. This skill has become a valuable asset in enhancing my products, allowing me to infuse
+            them
             with vivid
             imagery that tells a story and engages viewers.</p>
         </div>
+
       </div>
 
     </div>
@@ -212,24 +225,20 @@
         <a href="pdfs/cv-jun.pdf" download class="cv-download">Download My CV</a><br>
       </div>
       <div class="contact-me-right">
+
+
         <!-- Contact Form -->
-        <form id="contact-form" method="POST" action="sendmail.php">
-          <div class="form-row">
-            <label for="contact-form-name">Name:</label>
-            <input id="contact-form-name" class="form-input" placeholder="Type your name here" type="text" name="name"
-              required>
-          </div>
-          <div class="form-row">
-            <label for="contact-form-email">Email:</label>
-            <input id="contact-form-email" class="form-input" placeholder="Type your email here" type="email"
-              name="email" required>
-          </div>
-          <div class="form-row-m">
-            <label for="contact-form-message">Message:</label>
-            <textarea id="contact-form-message" class="form-input-msg" placeholder="Type your message here"
-              name="message" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Submit</button>
+        <form class="contact-form" action="https://formspree.io/f/mnnanobv" method="POST">
+          <label class="form-label">
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label class="form-label">
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button class="submit-msg" type="submit">Send</button>
         </form>
 
       </div>
