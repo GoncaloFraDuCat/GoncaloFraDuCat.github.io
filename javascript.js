@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const carouselItems = document.querySelectorAll('.projects-carousel .projects-box');
+  const carouselItems = document.querySelectorAll('.projects-carousel .projects-box-1 .projects-box-2');
   const prevButton = document.getElementById('prev-button');
   const nextButton = document.getElementById('next-button');
 

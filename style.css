@@ -134,15 +134,7 @@ img {
   justify-content: center;
 }
 
-.projects-container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: auto;
-  /* Adjusted for three columns */
-  gap: 20px;
-}
+.projects-container {}
 
 .projects-carousel {
   display: flex;
@@ -154,6 +146,11 @@ img {
   scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
   width: 100%;
   /* Ensure it takes full width */
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Adjusted for three columns */
+  gap: 20px;
 }
 
 .projects-carousel-buttons {
@@ -163,12 +160,8 @@ img {
   margin-top: 20px;
 }
 
-.projects-box {
-  flex: 0 0 auto;
-  width: 100%;
-  /* Each box takes full width of the carousel */
-  margin-right: 20px;
-}
+
+
 
 .projects-carousel .projects-box:first-child,
 .projects-carousel .projects-box:last-child {
@@ -176,7 +169,7 @@ img {
   margin-right: auto;
 }
 
-.projects-box-1 {
+.projects-box {
   height: 70vh;
   width: 170vh;
   display: flex;
@@ -187,17 +180,7 @@ img {
   background-image: url(images/dark-background.jpg);
 }
 
-.projects-box-2 {
-  height: 70vh;
-  width: 170vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: space-between;
-  background-image: url(images/dark-background.jpg);
-  flex-direction: row-reverse;
-}
+
 
 
 .projects-box-image-1 {
