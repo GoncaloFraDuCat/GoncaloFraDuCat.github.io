@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  const carouselItems = document.querySelectorAll('.projects-carousel .projects-box-1 .projects-box-2');
+  const carouselItems = document.querySelectorAll('.projects-box');
   const prevButton = document.getElementById('prev-button');
   const nextButton = document.getElementById('next-button');
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateCarousel() {
     carouselItems.forEach((item, index) => {
-      item.style.display = index === currentIndex ? 'block' : 'none';
+      item.style.display = index === currentIndex ? 'flex' : 'none';
     });
   }
 

@@ -140,7 +140,6 @@ img {
   display: flex;
   overflow-x: scroll;
   /* Changed to scroll for better control */
-  white-space: nowrap;
   scrollbar-width: thin;
   /* For Firefox */
   scrollbar-color: rgba(255, 255, 255, 0.7) transparent;
@@ -171,7 +170,7 @@ img {
 
 .projects-box {
   height: 70vh;
-  width: 170vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
