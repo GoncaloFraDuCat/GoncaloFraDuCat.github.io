@@ -931,7 +931,7 @@
     flex-direction: column;
     color: white;
     margin: 5% 5% 0% 5%;
-    width: 42vh;
+    width: 91%;
   }
 
   .contact-me {
@@ -950,7 +950,7 @@
     font-size: xx-large;
     color: white;
     font-weight: 500;
-
+    text-align: center;
   }
 
   .contact-me-left {
