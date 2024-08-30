@@ -999,7 +999,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 51vh;
+    width: 91%;
     margin-top: 5%;
   }
 
@@ -1084,7 +1084,6 @@
   .download-cv a:hover {
     color: #ddd;
   }
-
 
 
 }
