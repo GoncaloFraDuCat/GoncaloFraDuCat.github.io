@@ -736,6 +736,7 @@
     height: 57%;
     background-size: cover;
     background-position: center;
+    transform: scale(0.9);
   }
 
   .bandup-logo {
