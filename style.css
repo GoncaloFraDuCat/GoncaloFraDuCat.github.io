@@ -1,4 +1,4 @@
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
 
   :root {
     --primary-color: #007bff;
@@ -185,7 +185,7 @@
 
 
   .projects-box-image-1 {
-    background-image: url(images/bandup3img.png);
+    background-image: url(images/bandup3fullsize.png);
     width: 50%;
     height: 100%;
     background-size: cover;
@@ -207,10 +207,12 @@
   }
 
   .projects-box-image-3 {
+    background-image: url(images/hpc123.png);
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    object-fit: contain;
   }
 
   .projects-box-image-3-1 {
@@ -254,9 +256,9 @@
 
 
   .project-description {
-    font-size: 0.8em;
-
+    font-size: 0.6em;
     padding-left: 17%;
+    width: 75%;
   }
 
   .skills-title {
@@ -535,6 +537,23 @@
     color: #ddd;
   }
 
+  .socials {
+    padding: 0;
+  }
+
+  .download-cv {
+    padding: 0;
+  }
+
+  #prev-button,
+  #next-button {
+    border-radius: 50%;
+    color: white;
+    background: #272727;
+    font-size: x-large;
+    border-style: none;
+  }
+
 }
 
 /****************************************
@@ -542,7 +561,7 @@
  ****************************************/
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   :root {
     --primary-color: #007bff;
     --secondary-color: #ffe7e5;
@@ -830,6 +849,8 @@
     font-size: 0.8em;
     font-weight: 300;
     padding-left: 5%;
+    padding-bottom: 5%;
+
   }
 
   .skills-box {
@@ -846,12 +867,13 @@
   .skills-box-1 {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 6% 8% 4% 2%;
   }
 
   .skills-box-1 h2 {
     font-size: 1.3em;
     color: slategray;
+    margin-bottom: 0;
 
   }
 
@@ -1085,5 +1107,20 @@
     color: #ddd;
   }
 
+  .socials {
+    padding: 0;
+  }
 
+  .download-cv {
+    padding: 0;
+  }
+
+  #prev-button,
+  #next-button {
+    border-radius: 50%;
+    color: white;
+    background: #272727;
+    font-size: x-large;
+    border-style: none;
+  }
 }
