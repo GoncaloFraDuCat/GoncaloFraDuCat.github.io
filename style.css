@@ -697,14 +697,15 @@
   }
 
   .projects-box {
-    height: 75vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     background-image: none;
+
   }
 
 
@@ -726,8 +727,8 @@
 
   .projects-box-image-2 {
     background-image: url(images/buddy-app-ad.png);
-    width: 90%;
-    height: 85%;
+    width: 78%;
+    height: 50%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -788,13 +789,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     height: 100%;
-    width: 80%;
+    width: 79%;
     font-size: 0.9em;
     font-weight: 300;
     line-height: 1.5;
-    padding-left: 5%;
+    padding-left: 11%;
   }
 
   .skills-title {
@@ -876,7 +876,7 @@
     line-height: 1.5;
     height: 100%;
     background-color: #272727;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 
   .music-intro {
@@ -897,8 +897,7 @@
 
   .hobbies-title-h1 {
     font-size: xx-large;
-    padding-top: 10%;
-    padding-left: 5%;
+    padding-top: 5%;
     font-weight: 500;
     text-align: center;
   }
@@ -1000,7 +999,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 42vh;
+    width: 51vh;
     margin-top: 5%;
   }
 
@@ -1027,7 +1026,7 @@
     background-image: url(images/github.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 39%;
+    width: 43%;
     height: 44px;
     border-radius: 5px;
     text-indent: -9999px;
