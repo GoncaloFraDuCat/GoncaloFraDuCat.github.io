@@ -52,3 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize the carousel
   updateCarousel();
 });
+
+
+// Your animation code

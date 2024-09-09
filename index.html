@@ -8,11 +8,14 @@
   <script src="javascript.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="icon" href="images/final-gc-black-modified.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </head>
 
@@ -288,6 +291,27 @@
     });
 
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const welcomeTitle = document.querySelector('.welcome-title');
+
+      anime({
+        targets: welcomeTitle,
+        width: ['1%', '100%'],
+        height: '*',
+        backgroundColor: '#000000',
+        opacity: [0, 1],
+        duration: 4000,
+        easing: 'easeInOutQuad'
+      });
+
+      setTimeout(function () {
+        welcomeTitle.classList.add('expanding');
+      }, 50);
+    });
+  </script>
+
 
 
 
