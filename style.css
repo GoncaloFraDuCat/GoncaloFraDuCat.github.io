@@ -71,12 +71,37 @@
   }
 
   .navbar-logo {
-    width: 50px;
-    padding-top: 5px;
+    width: 82px;
+    padding-top: 14px;
     position: fixed;
     left: 40px;
     z-index: 1000;
-    border-radius: 50%;
+
+  }
+
+  #welcome {}
+
+  .welcome-h1 {
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    height: 100%;
+  }
+
+
+  .welcome-logo {
+    height: 10%;
+    width: 10%;
+    padding: 1%;
   }
 
   .banner-wrapper {
@@ -152,6 +177,7 @@
     margin-right: auto;
     /* Adjusted for three columns */
     gap: 20px;
+    justify-content: center;
   }
 
   .projects-carousel-buttons {
@@ -171,17 +197,16 @@
   }
 
   .projects-box {
-    height: 70vh;
-    width: 100%;
+    height: 57vh;
+    width: 72%;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 10px;
     justify-content: space-between;
     background-image: url(images/dark-background.jpg);
+    padding: 3%;
   }
-
-
 
 
   .projects-box-image-1 {
@@ -256,7 +281,7 @@
 
 
   .project-description {
-    font-size: 0.6em;
+    font-size: 0.5em;
     padding-left: 17%;
     width: 75%;
   }
@@ -624,6 +649,33 @@
     border-radius: 50%;
   }
 
+  #welcome {}
+
+  .welcome-h1 {
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15%;
+    height: 100%;
+    height: 92vh;
+    ;
+  }
+
+
+  .welcome-logo {
+    height: 10%;
+    width: 30%;
+    padding: 1%;
+  }
+
   .banner-wrapper {
     margin-top: 1px;
   }
@@ -674,11 +726,12 @@
 
   .projects-title {
     color: white;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: xx-large;
+    font-weight: 200;
     display: flex;
     justify-content: center;
-    padding-top: 15%;
+    margin-top: 8%;
+    padding-top: 2%;
   }
 
   .projects-container {}

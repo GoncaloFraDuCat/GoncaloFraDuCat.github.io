@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="icon" href="images/gc_logo.png" type="image/x-icon">
+  <link rel="icon" href="images/final-gc-black-modified.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -23,17 +23,29 @@
 
   <nav>
     <a href="index.html">
-      <img src="images/gc_logo.png" alt="Logo" class="navbar-logo">
+      <img src="images/final-gc-black-modified.png" alt="Logo" class="navbar-logo">
     </a>
     <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#my-projects">Projects</a></li>
-      <li><a href="#my-skills">Skills</a></li>
-      <li><a href="#my-hobbies">Hobbies</a></li>
-      <li><a href="#contact-me">Contact Me</a></li>
+      <div class="navbar-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#my-skills">Skills</a></li>
+        <li><a href="#my-hobbies">Hobbies</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </div>
     </ul>
   </nav>
 
+  <section id="welcome">
+    <div class="welcome-container">
+      <img src="images/final-gc-black-modified.png" alt="Logo" class="welcome-logo">
+      <a href="#banner" class="welcome-h1">
+        <h1 class="welcome-title">
+          &lt; Get to know me /&gt;
+        </h1>
+      </a>
+
+  </section>
   <section id="banner">
     <div class="banner-image">
       <div class="banner-text">
@@ -260,10 +272,7 @@
 
   <script src="javascript.js"></script>
 
-  <!-- Inline JavaScript for immediate execution -->
   <script>
-    // Your inline JavaScript code here
-    // For example, smooth scrolling functionality
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (event) {
         event.preventDefault();
