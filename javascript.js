@@ -107,3 +107,23 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollToTopButton = document.getElementById('scroll-to-top-button');
+
+    // Show the button when scrolling starts
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 0) { // Check if scrolled past the top
+            scrollToTopButton.style.opacity = "1";
+            scrollToTopButton.style.visibility = "visible";
+        } else {
+            scrollToTopButton.style.opacity = "0";
+            scrollToTopButton.style.visibility = "hidden";
+        }
+    });
+
+    // Scroll to top when the button is clicked
+    scrollToTopButton.addEventListener('click', function(event) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+});
