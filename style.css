@@ -19,6 +19,46 @@
     line-height: 1.5;
   }
 
+  @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+
+
+  .hidden {
+    opacity: 0;
+  }
+
+
+
+  .console-container {
+
+    font-family: "VT323", monospace;
+    font-size: xxx-large;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "ELSH" 2;
+
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+
+  .console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+  }
+
   nav {
     height: 61.5px;
   }
@@ -622,6 +662,42 @@
 
   img {
     max-height: 100%;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .console-container {
+
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-size: xx-large;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "ELSH" 2;
+    text-align: center;
+    height: 200px;
+    width: 265px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 342px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
   }
 
   .navbar {
