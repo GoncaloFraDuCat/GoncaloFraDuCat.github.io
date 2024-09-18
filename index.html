@@ -136,10 +136,8 @@
           </div>
         </div>
 
-        <div class=" projects-box-image-3">
-
-          <p></p>
-        </div>
+        <iframe src="https://happycampus.pt/" title="ISEC Buddy App" width="375" height="667" class="frame">
+        </iframe>
       </div>
 
     </div>
@@ -200,10 +198,18 @@
         </div>
 
       </div>
+      <!DOCTYPE html>
+      <html>
+
+
+      </html>
+
+
 
     </div>
 
   </section>
+
 
   <section id="my-hobbies">
     <div class="hobbies-container">
@@ -326,6 +332,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
   <script src="javascript.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarLinks = document.querySelectorAll('.navbar-list li');
+      var currentBlinkingLink = null;
+
+      navbarLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Stop the current blinking link
+          if (currentBlinkingLink) {
+            currentBlinkingLink.querySelector('.blinker').classList.remove('blinker');
+          }
+
+          // Start blinking effect on the clicked link
+          var blinker = document.createElement('span');
+          blinker.className = 'blinker';
+          this.insertBefore(blinker, this.firstChild);
+
+          currentBlinkingLink = this;
+
+          setTimeout(function () {
+            blinker.remove();
+            currentBlinkingLink = null;
+          }, 20000); // Match the animation duration (0.9s * 1000ms)
+        });
+      });
+    });
+  </script>
 
 
 </body>
