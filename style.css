@@ -755,6 +755,7 @@
     --secondary-color: #ffe7e5;
     --background-color: rgb(255, 249, 249);
     --text-color: #343a40;
+    scrollbar-width: none;
   }
 
   body {
