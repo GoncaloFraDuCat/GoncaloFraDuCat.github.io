@@ -269,6 +269,7 @@
     height: 100%;
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .projects-box-image-3 {
@@ -445,7 +446,7 @@
     align-items: center;
     background-color: black;
     margin-bottom: 5%;
-    margin-top: 18vh;
+    margin-top: 12vh;
   }
 
   .form-label {
@@ -453,9 +454,21 @@
     flex-direction: column;
     color: white;
     margin: 5%;
-    padding: 2vh;
+    padding: 1vh;
     width: 51vh;
   }
+
+  .form-label-msg {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 5%;
+    padding: 2vh;
+    width: 51vh;
+    height: 12vh;
+  }
+
+
 
   .contact-me {
     min-height: calc(100vh - 157.5px);
@@ -676,6 +689,10 @@
     to {
       visibility: hidden;
     }
+  }
+
+  .msg-form {
+    height: 15vh;
   }
 
 }
@@ -1216,7 +1233,7 @@
   }
 
   .msg-form {
-    height: 20vh;
+    height: 40vh;
   }
 
   .linkedin-link {

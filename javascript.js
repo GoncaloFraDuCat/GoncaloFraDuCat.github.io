@@ -127,3 +127,64 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbarLinks = document.querySelectorAll('.navbar-list li');
+      var currentBlinkingLink = null;
+
+      navbarLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Stop the current blinking link
+          if (currentBlinkingLink) {
+            currentBlinkingLink.querySelector('.blinker').classList.remove('blinker');
+          }
+
+          // Start blinking effect on the clicked link
+          var blinker = document.createElement('span');
+          blinker.className = 'blinker';
+          this.insertBefore(blinker, this.firstChild);
+
+          currentBlinkingLink = this;
+
+          setTimeout(function () {
+            blinker.remove();
+            currentBlinkingLink = null;
+          }, 20000); // Match the animation duration (0.9s * 1000ms)
+        });
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const welcomeTitle = document.querySelector('.welcome-title');
+
+      anime({
+        targets: welcomeTitle,
+        width: ['1%', '100%'],
+        height: '*',
+        backgroundColor: '#000000',
+        opacity: [0, 1],
+        duration: 4000,
+        easing: 'easeInOutQuad'
+      });
+
+      setTimeout(function () {
+        welcomeTitle.classList.add('expanding');
+      }, 50);
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        const href = this.getAttribute('href');
+        const offsetTop = document.querySelector(href).offsetTop;
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        window.scroll({
+          top: offsetTop - navbarHeight,
+          behavior: 'smooth'
+        });
+      });
+    });

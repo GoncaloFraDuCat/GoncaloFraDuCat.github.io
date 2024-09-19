@@ -243,19 +243,16 @@
         <h1 class="contact-title">Contact Me</h1>
         <p class="contact-p">Feel free to reach out with any inquiries.</p>
 
-        <!-- LinkedIn Link -->
         <a href="https://www.linkedin.com/in/gon%C3%A7alo-catarro-1b3332174/" target="_blank"
           class="linkedin-link">Connect on
           LinkedIn</a><br>
         <a href="https://github.com/GoncaloFraDuCat?tab=repositories" target="_blank" class="github-link">Github</a><br>
 
-        <!-- CV PDF Link -->
         <a href="pdfs/CV2024.pdf" download class="cv-download">Download My CV</a><br>
       </div>
       <div class="contact-me-right">
 
 
-        <!-- Contact Form -->
         <form class="contact-form" action="https://formspree.io/f/mnnanobv" method="POST">
           <label class="form-label">
             Your email:
@@ -265,7 +262,6 @@
             Your message:
             <textarea name="message" class="msg-form"></textarea>
           </label>
-          <!-- your other form fields go here -->
           <button class="submit-msg" type="submit">Send</button>
         </form>
 
@@ -291,77 +287,15 @@
   </footer>
 
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (event) {
-        event.preventDefault();
-        const href = this.getAttribute('href');
-        const offsetTop = document.querySelector(href).offsetTop;
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
-        window.scroll({
-          top: offsetTop - navbarHeight,
-          behavior: 'smooth'
-        });
-      });
-    });
 
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const welcomeTitle = document.querySelector('.welcome-title');
-
-      anime({
-        targets: welcomeTitle,
-        width: ['1%', '100%'],
-        height: '*',
-        backgroundColor: '#000000',
-        opacity: [0, 1],
-        duration: 4000,
-        easing: 'easeInOutQuad'
-      });
-
-      setTimeout(function () {
-        welcomeTitle.classList.add('expanding');
-      }, 50);
-    });
-  </script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
   <script src="javascript.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var navbarLinks = document.querySelectorAll('.navbar-list li');
-      var currentBlinkingLink = null;
 
-      navbarLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          // Stop the current blinking link
-          if (currentBlinkingLink) {
-            currentBlinkingLink.querySelector('.blinker').classList.remove('blinker');
-          }
-
-          // Start blinking effect on the clicked link
-          var blinker = document.createElement('span');
-          blinker.className = 'blinker';
-          this.insertBefore(blinker, this.firstChild);
-
-          currentBlinkingLink = this;
-
-          setTimeout(function () {
-            blinker.remove();
-            currentBlinkingLink = null;
-          }, 20000); // Match the animation duration (0.9s * 1000ms)
-        });
-      });
-    });
-  </script>
 
 
 </body>
