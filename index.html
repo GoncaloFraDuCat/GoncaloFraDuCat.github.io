@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <title>My Website</title>
   <link rel="stylesheet" href="style.css">
@@ -12,12 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="icon" href="images/final-gc-black-modified.png" type="image/x-icon">
-
   <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
 </head>
 
@@ -34,7 +32,7 @@
       <div class="navbar-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#my-projects">Projects</a></li>
-        <li><a href="#my-skills">Skills</a></li>
+        <li><a href="#new-skills">Skills</a></li>
         <li><a href="#my-hobbies">Hobbies</a></li>
         <li><a href="#contact-me">Contact Me</a></li>
       </div>
@@ -54,8 +52,21 @@
     </div>
   </section>
 
-
-  <section id="banner">
+  <!--
+  <section id="intro">
+    <div class="intro-container">
+      <div class="intro-left" style="gap: 5vh;">
+        <h1 class="intro-title">Hello, I'm Gonçalo Catarro</h1>
+        <p class="intro-p">A Full-Stack Developer based in Lisbon, Portugal. I specialize in creating dynamic and
+          responsive web applications, leveraging my skills in HTML, CSS, JavaScript, and Ruby on Rails to craft
+          user-friendly solutions that meet client needs. I am passionate about transforming complex problems into
+          engaging digital experiences, and I am always eager to take on new challenges.</p>
+      </div>
+      <div class="intro-right">
+        <img src="images/ascii-pic.png" alt="Gonçalo Catarro" class="intro-image" style="height: 50vh;">
+  </section>
+--> 
+  <section id="banner" style="margin-bottom: 6vh;">
     <div class="banner-image">
       <div class="banner-text">
 
@@ -67,7 +78,16 @@
 
   </section>
 
-  <section id="my-projects">
+  <section id="new-skills">
+    <h1 class="skills-title">My Skills</h1>
+    <section class="skills-container" id="skills-container"></section>
+  </section>
+
+  </section>
+
+
+
+  <section id="my-projects" style="min-height:0">
     <h1 class="projects-title">My Past Projects</h1>
 
     <div class="projects-carousel">
@@ -143,7 +163,8 @@
     </div>
 
   </section>
-
+<!--
+ 
   <section id="my-skills">
     <div class="skills-container">
       <div class="skills-intro">
@@ -205,7 +226,7 @@
     </div>
 
   </section>
-
+ -->
 
   <section id="my-hobbies">
     <div class="hobbies-container">
@@ -243,7 +264,7 @@
           LinkedIn</a><br>
         <a href="https://github.com/GoncaloFraDuCat?tab=repositories" target="_blank" class="github-link">Github</a><br>
 
-        <a href="pdfs/CV2024.pdf" download class="cv-download">Download My CV</a><br>
+        <a href="pdfs/cv2025.pdf" download class="cv-download">Download My CV</a><br>
       </div>
       <div class="contact-me-right">
 
@@ -276,7 +297,7 @@
         <li><a href="https://pt.linkedin.com/in/gon%C3%A7alo-catarro-1b3332174">LinkedIn</a></li>
       </ul>
       <ul class="download-cv">
-        <li><a href="pdfs/CV 09.24.pdf" download>Download CV</a></li>
+        <li><a href="pdfs/cv2025.pdf" download>Download CV</a></li>
       </ul>
     </div>
   </footer>
@@ -290,7 +311,62 @@
 
   <script src="javascript.js"></script>
 
+  <script>
+    // Data representing skills and their levels
+const skills = [
+  { name: "Ruby", filled: 18 },
+  { name: "JavaScript", filled: 10 },
+  { name: "CSS", filled: 18 },
+  { name: "HTML", filled: 18 },
+  { name: "PostgreSQL", filled: 14 },
+  { name: "Rails", filled: 17 },
+];
 
+// Function to generate skill bars
+function generateSkillBars(skills) {
+  const container = document.getElementById("skills-container");
+
+  skills.forEach((skill) => {
+    // Create skill box
+    const skillBox = document.createElement("div");
+    skillBox.classList.add("skills-box");
+
+    // Add skill name
+    const skillName = document.createElement("div");
+    skillName.classList.add("skills-box-name");
+    skillName.innerHTML = `<p>${skill.name}</p>`;
+    skillBox.appendChild(skillName);
+
+    // Create skill bar container
+    const skillBar = document.createElement("div");
+    skillBar.classList.add("skill-bar");
+
+    // Create skill bar fill
+    const skillBarFill = document.createElement("div");
+    skillBarFill.classList.add("skill-bar-fill");
+
+    // Add segments to the bar
+    for (let i = 1; i <= 20; i++) {
+      const segment = document.createElement("div");
+      segment.classList.add("segment");
+      if (i > skill.filled) {
+        segment.style.backgroundColor = "#222"; // Unfilled
+        segment.style.borderColor = "white";
+      }
+      skillBarFill.appendChild(segment);
+    }
+
+    skillBar.appendChild(skillBarFill);
+    skillBox.appendChild(skillBar);
+
+    // Add skill box to container
+    container.appendChild(skillBox);
+  });
+}
+
+// Initialize skill bars
+generateSkillBars(skills);
+  </script>
 
 
 </body>

@@ -204,6 +204,8 @@
     font-weight: 200;
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .projects-container {}
@@ -330,7 +332,7 @@
   .skills-title {
     color: white;
     font-size: 3em;
-    padding: 25vh 0px 25vh 0px;
+    padding: 5vh 0px 10vh 0px;
     font-weight: 200;
   }
 
@@ -342,13 +344,7 @@
 
   }
 
-  .skills-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    min-height: auto;
-    margin-top: 3%;
-  }
+  
 
   .skills-intro {
     display: flex;
@@ -367,7 +363,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-
     justify-content: center;
     height: 100%;
     width: 70%;
@@ -668,6 +663,7 @@
     margin-right: 10%;
     border-radius: 10px;
     border-color: black;
+    transform: scale(0.7);
   }
 
   .navbar-list li {
@@ -693,6 +689,78 @@
 
   .msg-form {
     height: 15vh;
+  }
+
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 10vh 0vh 17vh;
+    gap: 47vh
+  }
+
+  .intro-left {
+    gap: 5vh;
+    width: 45%;
+    line-height: 1.5;
+    font-family: "Handjet", sans-serif;
+    font-size: 1.5em;
+  }
+
+  #new-skills {
+    padding: 20px;
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    align-items: center;
+  }
+  
+  .skills-box {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+  }
+  
+  .skills-box-name p {
+    font-size: 3vh;
+    font-weight: 650;
+    margin: 0;
+    width: 100px;
+  }
+  
+  .skill-bar {
+    flex-grow: 1;
+    height: 2vh;
+    background-color: #222;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  
+  .skill-bar-fill {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .segment {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #0f0;
+    border: 1px solid #000;
+    box-sizing: border-box;
   }
 
 }
@@ -885,6 +953,8 @@
     justify-content: center;
     margin-top: 8%;
     padding-top: 2%;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .projects-container {}
@@ -1026,7 +1096,7 @@
   .skills-title {
     color: white;
     font-size: 1em;
-    padding: 25vh 0px 25vh 0px;
+    padding: 5vh 0px 1vh 0px;
     font-weight: 500;
   }
 
@@ -1369,6 +1439,7 @@
     border-radius: 10px;
     border-color: black;
     width: 80%;
+    transform: scale(0.7);
   }
 
   .navbar-list li {
@@ -1388,9 +1459,84 @@
     animation: blinker 0.9s steps(2, start) infinite;
   }
 
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 10vh 0vh 17vh;
+    gap: 47vh
+  }
+
+  .intro-left {
+    gap: 5vh;
+    width: 50%;
+    line-height: 1.5;
+    font-family: "Handjet", sans-serif;
+    font-size: 1.5em;
+  }
+
   @keyframes blinker {
     to {
       visibility: hidden;
     }
   }
+
+  #new-skills {
+    padding: 20px;
+  }
+  
+  .skills-title {
+    color: white;
+    font-size: 3em;
+    padding: 0vh 0vh 0vh 0vh;
+    font-weight: 200;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    align-items: center;
+  }
+  
+  .skills-box {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+  }
+  
+  .skills-box-name p {
+    font-size: 3vh;
+    font-weight: 650;
+    margin: 0;
+    width: 100px;
+  }
+  
+  .skill-bar {
+    flex-grow: 1;
+    height: 2vh;
+    background-color: #222;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+  }
+  
+  .skill-bar-fill {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .segment {
+    flex-grow: 1;
+    height: 100%;
+    background-color: #0f0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+
 }
